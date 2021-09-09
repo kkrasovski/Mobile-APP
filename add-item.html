@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="screen">
+       
+        <h1 class="title">Добавить товар</h1>
+        <div class="container container_inner">
+            <div class="add-group-item__list">
+               <div class="add-group-item__input input">
+                   <label for="item-add" class="input__label">Товар</label>
+                   <input type="text" id="item-add" placeholder="Ламинат" class="input__value">                
+               </div>
+               <div class="add-group-item__input input">
+                <label for="item-price" class="input__label">Цена</label>
+                <input type="text" id="item-price" placeholder="150" class="input__value">                
+            </div>
+               <div class="add-group-item__input input">
+                <label for="item-comments" class="input__label">Комментарий</label>
+                <textarea placeholder="Комментарий"  id="item-comments" class="input__value"></textarea>                
+            </div>
+            <div class="add-group-item__input input">
+                <label for="category-select" class="input__label">Группы</label>
+                <select  id="category-select">
+                    <option value="">Напольные покрытия</option>
+                    <option value="">Строительные смеси</option>
+                    <option value="">Двери, окна, лестницы</option>
+                    <option value="">Сантехника</option>
+                    <option value="">Товары для ванны</option>
+                    <option value="">Товары в спальню</option>
+                </select>            
+            </div>
+            <div class="add-group-item__input tags">
+               <div class="tags__single">
+                <div class="tags__single_title ">Люстры</div>
+                <div class="tags__single__delete-icon"><img src="assets/img/delete.png"></div>
+               </div>  
+               <div class="tags__single">
+                <div class="tags__single_title">Спальня</div>
+                <div class="tags__single__delete-icon"><img src="assets/img/delete.png"></div>
+               </div>   
+               <div class="tags__single">
+                <div class="tags__single_title">Электрика</div>
+                <div class="tags__single__delete-icon"><img src="assets/img/delete.png"></div>
+               </div>   
+               <div class="tags__single">
+                <div class="tags__single_title">Освещение</div>
+                <div class="tags__single__delete-icon"><img src="assets/img/delete.png"></div>
+               </div>   
+               <div class="tags__single">
+                <div class="tags__single_title">Второй этаж</div>
+                <div class="tags__single__delete-icon"><img src="assets/img/delete.png"></div>
+               </div>   
+               <div class="tags__single">
+                <div class="tags__single_title">Название категории</div>
+                <div class="tags__single__delete-icon"><img src="assets/img/delete.png"></div>
+               </div>    
+            </div>
+                
+            </div>
+            <div class="container__button_add-inside">
+                <a class="button">Добавить</a>
+            </div>
+           
+        </div>
+        <div class="screen__footer footer">
+            <div class="footer__button">
+                <div class="nav-btn"><a href=""><img src="assets/icon/home.svg" alt=""></a></div>
+            </div>
+            <div class="footer__button">
+                <div class="nav-btn"><a href=""><img src="assets/icon/basket.svg" alt=""></a></div>
+            </div>
+            <div class="footer__button">
+                <div class="nav-btn"><a href=""><img src="assets/icon/group-basket.svg" alt=""></a></div>
+            </div>
+            <div class="footer__button">
+                <div class="nav-btn"><a href=""><img src="assets/icon/service.svg" alt=""></a></div>
+            </div>
+            <div class="footer__button">
+                <div class="nav-btn"><a href=""><img src="assets/icon/group-service.svg" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let irina = document.querySelector('.button');
+   irina.addEventListener('click', () => alert('Ира-Ира'));
+</script>
+</html>
