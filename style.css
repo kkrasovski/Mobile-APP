@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.screen {
+    width: 360px;
+    height: 640px;
+    border: 1px solid #000;   
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container {
+    padding: 15px;
+    overflow: scroll;
+    height: 540px;
+}
+
+.container::-webkit-scrollbar {
+    width: 0;
+  }
+  
+
+.screen:after {
+    content: "";
+    display: block;
+    height: 72px;
+    width: 100%;    
+    position: absolute;
+    bottom: 45px;
+    background: linear-gradient(to top, rgb(255, 255, 255) 5%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.title {
+    padding: 10px 15px; 
+    text-align: center;
+}
+
+.list__single {
+    margin: 10px 0;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;  
+    border: 1px solid #09194f36;
+    cursor: pointer;
+}
+
+.list-item__elem {
+    padding: 10px;
+}
+
+.list-item__title {
+    font-weight: 700;
+}
+
+.list-item__delete-icon {
+    transition:         transform .8s ease-in-out;
+    height: 24px;
+}
+
+
+.list-item__delete-icon:hover {
+opacity: 0.4;
+transform: rotate(310deg); 
+animation-duration: .5s;
+animation-timing-function: ease-out;
+}
+.list__single:hover {
+    -webkit-box-shadow: 2px 1px 9px 0px rgba(34, 60, 80, 0.13);
+    -moz-box-shadow: 2px 1px 9px 0px rgba(34, 60, 80, 0.13);
+    box-shadow: 2px 1px 9px 0px rgba(34, 60, 80, 0.13);
+}
+
+.list-item__title {
+    flex-grow: 2;
+}
+
+
+.container__button {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    bottom: 90px;
+    width: calc(100% - 30px);
+}
+
+.button {
+    padding: 20px;
+    text-align: center;
+    background: #09194F;
+    text-transform: uppercase;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+}
+.button:hover {
+  
+    background: #010c30;
+   
+}
+
+.screen__footer {
+    position: absolute;
+    z-index: 1;
+    background: #09194F;
+    bottom: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer__button {
+    padding: 4px;
+    padding-top: 9px;
+    min-width: 32px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #000;
+    width: 25%;
+    border-left: 1px solid #eeeeee1c;
+    cursor: pointer;
+}
+
+.footer__button:hover {
+    padding: 4px;
+    padding-top: 9px;
+    min-width: 32px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #09194F;
+    width: 25%;
+    border-left: 1px solid #eeeeee1c;
+}
